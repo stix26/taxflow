@@ -4,9 +4,26 @@ TaxFlow Site is a modern, cross-platform tax filing application built with Expo 
 
 The app features a complete tax filing workflow including marketing pages, user onboarding, step-by-step tax preparation, document review, digital signatures, payment processing, and e-filing capabilities.
 
-## 🎥 Demo
+## 🚨 **IMPORTANT DISCLAIMER**
 
-**[📱 View Live Demo](https://drive.google.com/file/d/1iOOKJie-5RJkgbj5MVDXBztM0PFm6m0N/view?usp=sharing)** - See the app in action with a complete walkthrough of the tax filing process.
+> **⚠️ FOR EDUCATIONAL PURPOSES ONLY ⚠️**
+>
+> This application is designed for **educational and demonstration purposes only**. The tax calculations, forms, and filing processes shown in this app should **NOT** be relied upon for actual tax preparation or filing.
+>
+> **Please note:**
+> - This software may contain bugs, errors, or inaccuracies
+> - Tax calculations are simplified and may not reflect actual tax law
+> - No guarantee of accuracy or compliance with current tax regulations
+> - Always consult a qualified tax professional for actual tax preparation
+> - Use official IRS software or certified tax preparers for real tax filing
+>
+> The developers assume no responsibility for any financial or legal consequences resulting from the use of this software.
+
+## 🌐 **Live Demo**
+
+**🚀 [View Live Application](https://taxflow-demo.surge.sh)** - Try the full application experience online
+
+**[📱 Video Walkthrough](https://drive.google.com/file/d/1iOOKJie-5RJkgbj5MVDXBztM0PFm6m0N/view?usp=sharing)** - See the app in action with a complete walkthrough of the tax filing process
 
 ## Features
 
@@ -221,10 +238,43 @@ taxflow-site/
 
 ## Production Deployment
 
-This app is ready for deployment to:
-- **Vercel/Netlify**: Web version via `expo export`
+### 🚀 **Live Deployment**
+
+The application is currently deployed and accessible at:
+- **Production URL**: [https://taxflow-demo.surge.sh](https://taxflow-demo.surge.sh)
+- **Hosting**: Surge.sh with global CDN
+- **SSL**: HTTPS enabled with automatic certificate management
+
+### 📋 **Deployment Options**
+
+This app is ready for deployment to multiple platforms:
+
+| Platform | Method | Best For | Cost |
+|----------|--------|----------|------|
+| **Surge.sh** | `surge . --domain your-domain.surge.sh` | Quick deployment | Free |
+| **Vercel** | Connect GitHub repo at [vercel.com](https://vercel.com) | Professional features | Free tier |
+| **Netlify** | Drag & drop at [netlify.com/drop](https://netlify.com/drop) | Easiest setup | Free tier |
+| **GitHub Pages** | Enable in repository settings | GitHub integration | Free |
+
+### 🔄 **Updating the Live Site**
+
+To update the deployed application:
+
+1. **Build for production:**
+   ```bash
+   bunx expo export -p web
+   ```
+
+2. **Deploy to Surge:**
+   ```bash
+   cd dist && surge . taxflow-demo.surge.sh
+   ```
+
+### 📱 **Mobile App Deployment**
+
 - **Expo Application Services (EAS)**: Native app builds
 - **App Store/Play Store**: Production mobile releases
+- **Expo Go**: Development and testing builds
 
 ## Contributing
 
