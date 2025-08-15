@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "TaxFlow Site",
+    "slug": "taxflow-site",
+    "version": "1.0.1",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "app.stix26.taxflow-site"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "app.stix26.taxflow-site"
+    },
+    "web": {
+      "favicon": "./assets/images/favicon.png",
+      "shortName": "TaxFlow Site",
+      "name": "TaxFlow Site"
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "origin": "https://stix26.com/"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
